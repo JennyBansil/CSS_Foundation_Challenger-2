@@ -1,0 +1,364 @@
+/* GENERAL STYLE */
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAVBAR */
+.navbar {
+  width:100%;
+  max-width: 1200px;
+  min-height: 70px;
+  margin:auto;
+  background-color: #222;
+  color: white;
+  position: fixed;
+  top:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 40px;
+}
+
+.menu-btn{
+  background: none;
+  border:none;
+  color:white;
+  padding:5px;
+  font-size: 1.5rem;
+
+  display: none;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* HERO SECTION */
+.hero {
+  width:100%;
+  max-width: 1200px;
+  min-height: 500px;
+  margin: 80px auto 40px;
+  background-color: white;
+
+  display: flex;
+  gap:20px;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.hero-text {
+  width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  width: 180px;
+  height: 50px;
+  background-color: #222;
+  color: white;
+
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.hero-image {
+  width:100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ABOUT SECTION */
+.about {
+  width:100%;
+  max-width: 1200px;
+  min-height: 420px;
+  margin: 40px auto;
+  background-color: white;
+
+  display: flex;
+  gap:30px;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.about-image {
+  width:100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-text {
+  width: 550px;
+}
+
+.about-text h2 {
+  font-size: 42px;
+}
+
+.about-text p {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* SKILLS SECTION */
+.skills {
+  width:100%;
+  max-width: 1200px;
+  min-height: 420px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills h2 {
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  width:100%;
+  max-width: 220px;
+  min-height: 120px;
+  background-color: #222;
+  color: white;
+
+  font-size: 28px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTACT SECTION */
+.contact {
+  width:100%;
+  max-width: 1200px;
+  min-height: 420px; 
+  margin: 40px auto;
+  background-color: white;
+  padding: 40px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact h2 {
+  font-size: 42px;
+  margin-bottom:50px;
+}
+
+.contact-box {
+  width:100%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #eee;
+  padding: 30px;
+}
+
+.contact-box p {
+  font-size: 22px;
+}
+
+/* FOOTER */
+footer {
+  width:100%;
+  max-width: 1200px;
+  min-height: 80px;
+  margin: 0 auto;
+  background-color: #222;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+/* Responsive Styling for screen size max width 768px*/
+
+@media (max-width:768px){
+
+  .content-container{
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    border-box:box-sizing;
+
+  }
+
+  .navbar{
+    justify-content: flex-end;
+    position: fixed;
+    top:0;
+    left:0;
+  }
+  .navbar .logo{
+    margin-right:auto;
+    font-size: 24px;
+  }
+  .navbar .nav-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top:70px;
+    right:0;
+    background-color: #222;
+    padding:10px 20px;
+    line-height: 2rem;
+    display: none;
+
+  }
+  .navbar .menu-btn{
+    display: flex;
+  }
+
+  .nav-links.show{
+    display: flex;
+  }
+
+  .hero-text{
+    width:100%;
+    text-align: center;
+
+    h1{
+      font-size: 32px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+  }
+
+  .about-text{
+    width:100%;
+    text-align: center;
+  
+    h2{
+      font-size: 30px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+  }
+
+  .skills-container{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:35px;
+
+
+    .skill-card{
+      padding:10px 20px;
+      font-size: 19px;
+      width:calc(100% / 2 - 35px);
+    }
+
+  }
+
+  .skills h2{
+    font-size: 30px;
+  }
+  
+  .contact h2{
+    font-size: 32px;
+  }
+  .contact p{
+    font-size: 16px;
+  }
+
+  footer{
+    padding:10px 0;
+
+    p{
+      font-size: 12px;
+    }
+  }
+
+
+}
